@@ -1,0 +1,55 @@
+# ---- 凭据与隐私（最重要：绝不入库）----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*
+*token*
+*secret*
+
+# ---- 节点/订阅/代理配置（含服务器地址与密码）----
+config.yaml
+config.yml
+nodes/
+profiles/
+subscriptions/
+*.sub
+subscription*.txt
+proxy-config*.yaml
+mihomo/config.yaml
+
+# ---- 运行时产物 ----
+out/
+logs/
+*.log
+state/
+cache/
+*.sqlite
+*.sqlite3
+*.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# ---- 工作区临时文件 ----
+_tmp/
+
+# ---- 编辑器/系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
